@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 1</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="user: ${users}">
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.createdAt}"></td>
+        </tr>
+    </table>
+</body>
+</html>
